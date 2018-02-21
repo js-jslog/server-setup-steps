@@ -1,0 +1,6 @@
+1. Modify host key from ctrlRight (is it this which breaks the alt-tab)
+2. sudo apt-get install connect-proxy
+3. set neovim to be default editor by adding the following to .bashrc
+```
+export EDITOR='nvim'
+```
