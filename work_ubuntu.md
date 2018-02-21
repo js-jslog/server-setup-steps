@@ -1,11 +1,11 @@
 1. Modify host key from ctrlRight (is it this which breaks the alt-tab)
 2. install chromium
-3. install neovim
+3. install vim8
 4. `ssh-keygen -t rsa -b 4096`
 5. sudo apt-get install connect-proxy
-6. set neovim to be default editor by adding the following to .bashrc
+6. set vim to be default editor by adding the following to .bashrc
 ```
-export EDITOR='nvim'
+export EDITOR='vim'
 ```
 7. create the following at ~/.ssh/config
 ```
