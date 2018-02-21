@@ -1,0 +1,22 @@
+1. Modify host key from ctrlRight (is it this which breaks the alt-tab)
+2. install chromium
+3. install neovim
+4. `ssh-keygen -t rsa -b 4096`
+5. sudo apt-get install connect-proxy
+6. set neovim to be default editor by adding the following to .bashrc
+```
+export EDITOR='nvim'
+```
+7. create the following at ~/.ssh/config
+```
+IdentityFile ~/.ssh/id_rsa
+Host *
+  ForwardAgent yes
+
+Host *github.com
+  ProxyCommand connect -H websensegateway:8080 %h %p
+  port 443
+  Hostname ssh.github.com
+  User git
+```
+8. install chromium
