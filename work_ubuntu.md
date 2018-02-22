@@ -27,3 +27,23 @@ Host *github.com
 13. `sudo apt-get install npm`
 14. `npm install -g eslint`
 15. `npm install -g eslint-config-airbnb-base`
+16. `sudo apt-get install default-jdk`
+17. create the following folder structure under ~
+```
+~
+ - rsl
+  - ansible-rsl
+  - local_disk
+   - data
+  - logs
+  - shared_disk
+   - data
+  - tomcat `checkout R6.12_T7.0.70`
+  - webapps
+   - R6_24
+   - vani_devt
+    - local_overrides.js `figure out what to put in here from ansible`
+    - META_INF/context.xml `figure out what to put in here from ansible`
+   - cdn
+   - protected_properties.js `figure out what to put in here from ansible`
+```
