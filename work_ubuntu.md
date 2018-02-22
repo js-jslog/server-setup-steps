@@ -20,3 +20,10 @@ Host *github.com
   User git
 ```
 8. install chromium
+9. `sudo apt-get install git`
+10. `sudo apt-get install curl`
+11. install nvm
+12. `nvm install stable`
+13. `sudo apt-get install npm`
+14. `npm install -g eslint`
+15. `npm install -g eslint-config-airbnb-base`
