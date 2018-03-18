@@ -11,6 +11,24 @@ A set of steps to rebuilding my server until I have ansible or docker working
 - `export EDITOR=vim`
 - `visudo`
 - (copy the `root ALL=(ALL...` line but for <new user>)
+- login as new user
+- `sudo apt-get install git`
+- `ssh-keygen -t rsa -b 4096`
+- add new ssh key to github
+- `cd ~ && git clone git@github.com:js-jslog/dotfiles.git`
+- `cd ~/dotfiles && ./setup.sh`
+
+## docker
+- `sudo apt-get install curl`
+- `sudo apt-get install software-properties-common`
+- `curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -`
+- `sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"`
+- `sudo apt-get update`
+- `sudo apt-get install -y docker-ce`
+  
+# jslog
+- `git clone git@github.com:js-jslog/jslog.git`
+- `cd jslog && ./docker-deploy.sh`
 
 ## nginx config
 This works
