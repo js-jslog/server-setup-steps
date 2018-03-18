@@ -2,15 +2,15 @@
 A set of steps to rebuilding my server until I have ansible or docker working
 
 ## user setup
-`useradd -m <new user>`
-`passwd <new user>`
-(install vim)
-`sudo add-apt-repository ppa:jonathonf/vim`
-`sudo apt-get update`
-`sudo apt-get install vim`
-`export EDITOR=vim`
-`visudo`
-(copy the `root ALL=(ALL...` line but for <new user>)
+- `useradd -m <new user>`
+- `passwd <new user>`
+- (install vim)
+  - `sudo add-apt-repository ppa:jonathonf/vim`
+  - `sudo apt-get update`
+- `sudo apt-get install vim`
+- `export EDITOR=vim`
+- `visudo`
+- (copy the `root ALL=(ALL...` line but for <new user>)
 
 ## nginx config
 This works
